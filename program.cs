@@ -1,18 +1,17 @@
 ﻿using System;
-using MyApplication.Models;  // Import the namespace
 
 class Program
 {
     static void Main(string[] args)
     {
-        // Create object of Person class from MyApplication.Models namespace
-        Person p = new Person();
+        // Create and initialize Student object
+        Student student = new Student();
+        student.Name = "Khushbu";
+        student.Age = 20;
+        student.Course = ".NET Programming";
 
-        // Access fields
-        p.Name = "Khushbu";
-        p.Age = 22;
-
-        // Call method
-        p.Display();
+        // Use methods from both parts of the partial class
+        student.DisplayBasicInfo();
+        student.DisplayCourse();
     }
 }
